@@ -23,17 +23,17 @@
   <meta name="description" content="[Git]">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git">
-<meta property="og:url" content="https://zac-saodiseng.github.io/2023/10/09/Git/index.html">
+<meta property="og:url" content="https://zac-saodiseng.github.io/2023/10/15/Git/index.html">
 <meta property="og:site_name" content="左璞凡的博客">
 <meta property="og:description" content="[Git]">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-10-09T12:26:00.788Z">
-<meta property="article:modified_time" content="2023-10-15T07:36:57.362Z">
+<meta property="article:published_time" content="2023-10-15T03:25:00.000Z">
+<meta property="article:modified_time" content="2023-10-15T13:27:14.679Z">
 <meta property="article:author" content="Pufan Zuo">
 <meta property="article:tag" content="后端">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://zac-saodiseng.github.io/2023/10/09/Git/">
+<link rel="canonical" href="https://zac-saodiseng.github.io/2023/10/15/Git/">
 
 
 <script id="page-configurations">
@@ -167,7 +167,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://zac-saodiseng.github.io/2023/10/09/Git/">
+    <link itemprop="mainEntityOfPage" href="https://zac-saodiseng.github.io/2023/10/15/Git/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -189,16 +189,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2023-10-09 20:26:00" itemprop="dateCreated datePublished" datetime="2023-10-09T20:26:00+08:00">2023-10-09</time>
+              <time title="Created: 2023-10-15 11:25:00 / Modified: 21:27:14" itemprop="dateCreated datePublished" datetime="2023-10-15T11:25:00+08:00">2023-10-15</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-10-15 15:36:57" itemprop="dateModified" datetime="2023-10-15T15:36:57+08:00">2023-10-15</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -230,7 +224,7 @@
       
         <h1 id="Git"><a href="#Git" class="headerlink" title="[Git]"></a>[Git]</h1><span id="more"></span>
 
-<h1 id="1-常用命令"><a href="#1-常用命令" class="headerlink" title="1.常用命令"></a>1.常用命令</h1><ol>
+<h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><ol>
 <li><p><code>git init</code>：初始化当前目录为一个git仓库,信息记录在隐藏的 .git 文件夹中</p>
 </li>
 <li><p><code>git add XX</code>：将XX文件添加到暂存区</p>
@@ -257,7 +251,7 @@ option:
           --pretty=online 将提交信息显示为一行
           --abbrev-commit 使得输出的commitId更简短
           --graph 以图的形式显示
-<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="number">12.</span> ```markdown</span><br><span class="line">    git <span class="keyword">reset</span> <span class="comment">--hard HEAD^ 或 git reset --hard HEAD~：将代码库回滚到上一个版本</span></span><br><span class="line">    </span><br><span class="line">    git <span class="keyword">reset</span> <span class="comment">--hard HEAD^^：往上回滚两次，以此类推</span></span><br><span class="line">    git <span class="keyword">reset</span> <span class="comment">--hard HEAD~100：往上回滚100个版本</span></span><br><span class="line">    git <span class="keyword">reset</span> <span class="comment">--hard 版本号：回滚到某一特定版本</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="number">12.</span> ```markdown</span><br><span class="line">    git <span class="keyword">reset</span> <span class="comment">--hard HEAD^ 或 git reset --hard HEAD~：将代码库回滚到上一个版本</span></span><br><span class="line">    git <span class="keyword">reset</span> <span class="comment">--hard HEAD^^：往上回滚两次，以此类推</span></span><br><span class="line">    git <span class="keyword">reset</span> <span class="comment">--hard HEAD~100：往上回滚100个版本</span></span><br><span class="line">    git <span class="keyword">reset</span> <span class="comment">--hard 版本号：回滚到某一特定版本</span></span><br></pre></td></tr></table></figure>
 </code></pre>
 </li>
 <li><p><code>git reflog</code>：查看HEAD指针的移动历史（包括被回滚的版本）</p>
@@ -289,12 +283,37 @@ option:
 <li><pre><code class="none">git push [-f] [--set-upstream] [远端分支 [本地分支:远程分支]]推送到远程仓库
     -f 强制覆盖
     若远程分支和本地分支名称相同,可只写本地
-    git push origin master
-    --set-upstream 推送到远端同时建立关联关系
+git push origin master --set-upstream 推送到远端同时建立关联关系
     若已关联 可省略分支名和远端名
+<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="number">27</span>. ```</span><br><span class="line">    需求背景:Git将本地某一个分支的内容上传到远程不同名分支（本地master分支上传到远程dev分支）</span><br><span class="line">    解决方法:这种时候一般可分为两种情况，一种是dev分支在远程已经存在了，我们只需要把本地的内容<span class="built_in">push</span>上去。另一种是dev分支在远程还没有被创建，我们需要在本地给远程创建dev分支，并把本地内容<span class="built_in">push</span>上去。下面将分别进行描述。</span><br><span class="line">    <span class="number">1</span>. 远程dev分支已经存在:</span><br><span class="line">    	（<span class="number">1</span>）远程分支不一定能在本地被搜索到，当通过命令：$ git branch -a  查看不到远程dev分支时，可以通过命令：$ git fetch  进行刷新，然后再通过  $ git branch -a   ，就可以看到远程分支了。</span><br><span class="line">    	（<span class="number">2</span>）通过命令： $ git branch -u <span class="built_in">origin</span>/dev  将本地当前分支（目前为master）与远程库<span class="built_in">origin</span>/dev分支进行关联绑定</span><br><span class="line">    	（<span class="number">3</span>）通过命令： $ git <span class="built_in">push</span> --set-upstream <span class="built_in">origin</span> master  将本地master分支的内容上传到远程dev分支。由于两个分支不同名，--set-upstream 参数不可省略，当然可以通过命令： $ git config --global <span class="built_in">push</span>.default upstream  将<span class="built_in">push</span>的默认方式改为upstream，这样以后<span class="built_in">push</span>时就不用再输入参数--set-upstream</span><br><span class="line">    <span class="number">2</span>.远程dev分支还没有创建:</span><br><span class="line">    	 这种情况可以在<span class="built_in">push</span>的同时创建远程dev分支，并把本地master的内容上传上去。可通过命令：$ git <span class="built_in">push</span> -u --set-upstream <span class="built_in">origin</span> master:dev  ，表示把本地master分支提交到远程dev分支，第一次运行时加上参数-u，表示把本地master分支与远程dev分支关联起来，效果与 $ git branch -u <span class="built_in">origin</span>/dev 一样</span><br></pre></td></tr></table></figure>
 </code></pre>
 </li>
-<li><p>Git将本地某一个分支的内容上传到远程不同名分支（本地<code>master</code>分支上传到远程<code>dev</code>分支)解决方法:<code>git branch -u origin/dev</code> 将本地当前分支（目前为<code>master</code>）与远程库<code>origin/dev</code>分支进行关联绑定，</p>
+<li><p><code>git push -d origin branch_name</code>：删除远程仓库的<code>branch_name</code>分支</p>
+</li>
+<li><p><code>git push --set-upstream origin branch_name</code>：设置本地的 branch_name 分支对应远程仓库的 branch_name 分支 push 到远程</p>
+</li>
+<li><p><code>git branch --set-upstream-to=origin/dev dev</code>：将远程的 <code>dev </code>分支与本地的 <code>dev </code>分支对应，并拉&#x2F;下载到本地。和下面一条的区别在于这条要先建立本地<code>dev</code>分支，且需要<code>merge</code>。强制删除分支用 <code>git branch -D dev</code></p>
+</li>
+<li><p><code>git checkout -t origin/dev</code>：在本地只有<code>master</code>分支，要将<code>dev</code>也<code>clone</code>下来，即将远程的<code>dev</code>分支拉取到本地。</p>
+<ul>
+<li>补充：Git 2.23 版本之后，<code>git checkout -t</code> 命令已经被 <code>git switch</code> 命令取代，所以你也可以使用 <code>git switch -t origin/dev</code> 来实现相同的效果</li>
+</ul>
+<figure class="highlight gams"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">总结：</span><br><span class="line"></span><br><span class="line">git branch --<span class="keyword">set</span>-upstream-to=origin/dev dev 用于已经存在的本地分支，只设置跟踪关系。</span><br><span class="line">git checkout -t origin/dev 用于创建并切换到与远程分支对应的本地分支。</span><br><span class="line"></span><br><span class="line">两个命令的最终效果是相似的，都是将本地分支与远程分支进行关联，使得在进行 git <span class="comment">pull</span> 或 <span class="comment">git push</span> 等操作时，<span class="comment">Git</span> 可以自动与远程分支进行交互。选择使用哪个命令取决于你的具体需求和当前的工作环境。</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>git pull</code>：将远程仓库的当前分支与本地仓库的当前分支合并</p>
+<ul>
+<li><code>git pull origin branch_name</code>：将远程仓库的 <code>branch_name</code> 分支与本地仓库的当前分支合并</li>
+</ul>
+</li>
+<li><p><code>git stash</code>：将工作区和暂存区中尚未提交的修改存入栈中</p>
+</li>
+<li><p><code>git stash list</code>：查看栈中所有元素</p>
+</li>
+<li><p><code>git stash apply</code>：将栈顶存储的修改恢复到当前分支，但不删除栈顶元素</p>
+</li>
+<li><p><code>git stash drop</code>：删除栈顶存储的修改</p>
+</li>
+<li><p><code>git stash pop</code>：将栈顶存储的修改恢复到当前分支，同时删除栈顶元素</p>
 </li>
 </ol>
 
@@ -315,12 +334,12 @@ option:
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2023/10/07/Tribute-to-Zhou-predecessor/" rel="prev" title="Tribute to Zhou predecessor">
-      <i class="fa fa-chevron-left"></i> Tribute to Zhou predecessor
+    <a href="/2023/10/15/Redis/" rel="prev" title="Redis">
+      <i class="fa fa-chevron-left"></i> Redis
     </a></div>
       <div class="post-nav-item">
-    <a href="/2023/10/15/Redis/" rel="next" title="Redis">
-      Redis <i class="fa fa-chevron-right"></i>
+    <a href="/2023/10/15/Linux/" rel="next" title="Linux">
+      Linux <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -380,7 +399,7 @@ option:
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git"><span class="nav-number">1.</span> <span class="nav-text">[Git]</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-number">2.</span> <span class="nav-text">1.常用命令</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git"><span class="nav-number">1.</span> <span class="nav-text">[Git]</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-number">2.</span> <span class="nav-text">常用命令</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -394,7 +413,7 @@ option:
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
