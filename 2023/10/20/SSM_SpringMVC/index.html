@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"zac-saodiseng.github.io","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="[SSM_SpringMVC]">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SSM_SpringMVC">
+<meta property="og:url" content="https://zac-saodiseng.github.io/2023/10/20/SSM_SpringMVC/index.html">
+<meta property="og:site_name" content="左璞凡的博客">
+<meta property="og:description" content="[SSM_SpringMVC]">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://zac-saodiseng.github.io/2023/10/20/SSM_SpringMVC/1.png">
+<meta property="og:image" content="https://zac-saodiseng.github.io/2023/10/20/SSM_SpringMVC/2.png">
+<meta property="og:image" content="https://zac-saodiseng.github.io/2023/10/20/SSM_SpringMVC/3.png">
+<meta property="og:image" content="https://zac-saodiseng.github.io/2023/10/20/SSM_SpringMVC/4.png">
+<meta property="og:image" content="https://zac-saodiseng.github.io/2023/10/20/SSM_SpringMVC/5.png">
+<meta property="og:image" content="https://zac-saodiseng.github.io/2023/10/20/SSM_SpringMVC/6.png">
+<meta property="og:image" content="https://zac-saodiseng.github.io/2023/10/20/SSM_SpringMVC/7.png">
+<meta property="og:image" content="https://zac-saodiseng.github.io/2023/10/20/SSM_SpringMVC/8.png">
+<meta property="og:image" content="https://zac-saodiseng.github.io/2023/10/20/SSM_SpringMVC/9.png">
+<meta property="og:image" content="https://zac-saodiseng.github.io/2023/10/20/SSM_SpringMVC/10.png">
+<meta property="og:image" content="https://zac-saodiseng.github.io/2023/10/20/SSM_SpringMVC/11.png">
+<meta property="og:image" content="https://zac-saodiseng.github.io/2023/10/20/SSM_SpringMVC/12.png">
+<meta property="og:image" content="https://zac-saodiseng.github.io/2023/10/20/SSM_SpringMVC/13.png">
+<meta property="og:image" content="https://zac-saodiseng.github.io/2023/10/20/SSM_SpringMVC/14.png">
+<meta property="og:image" content="https://zac-saodiseng.github.io/2023/10/20/SSM_SpringMVC/15.png">
+<meta property="og:image" content="https://zac-saodiseng.github.io/2023/10/20/SSM_SpringMVC/16.png">
+<meta property="og:image" content="https://zac-saodiseng.github.io/2023/10/20/SSM_SpringMVC/17.png">
+<meta property="article:published_time" content="2023-10-20T06:30:00.000Z">
+<meta property="article:modified_time" content="2023-10-20T08:00:30.807Z">
+<meta property="article:author" content="Pufan Zuo">
+<meta property="article:tag" content="后端">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://zac-saodiseng.github.io/2023/10/20/SSM_SpringMVC/1.png">
+
+<link rel="canonical" href="https://zac-saodiseng.github.io/2023/10/20/SSM_SpringMVC/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>SSM_SpringMVC | 左璞凡的博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">左璞凡的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">日出之美便在于它脱胎于最深的黑暗</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://zac-saodiseng.github.io/2023/10/20/SSM_SpringMVC/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Pufan Zuo">
+      <meta itemprop="description" content="大局观选手。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="左璞凡的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          SSM_SpringMVC
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2023-10-20 14:30:00 / Modified: 16:00:30" itemprop="dateCreated datePublished" datetime="2023-10-20T14:30:00+08:00">2023-10-20</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CS/" itemprop="url" rel="index"><span itemprop="name">CS</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CS/%E5%BC%80%E5%8F%91/" itemprop="url" rel="index"><span itemprop="name">开发</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CS/%E5%BC%80%E5%8F%91/%E5%90%8E%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">后端</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="SSM-SpringMVC"><a href="#SSM-SpringMVC" class="headerlink" title="[SSM_SpringMVC]"></a>[SSM_SpringMVC]</h1><span id="more"></span>
+
+<h1 id="SpringMVC简介"><a href="#SpringMVC简介" class="headerlink" title="SpringMVC简介"></a>SpringMVC简介</h1><p><img src="/2023/10/20/SSM_SpringMVC/1.png" alt="image-20231020145852926"></p>
+<p>SpringMVC技术与Servlet技术功能等同，属于web层开发技术</p>
+<p>MVC的全名是Model View Controller，是模型(model)－视图(view)－控制器(controller)的缩写，是一种软件设计典范。它是用一种业务逻辑、数据与界面显示分离的方法来组织代码，将众多的业务逻辑聚集到一个部件里面，在需要改进和个性化定制界面及用户交互的同时，不需要重新编写业务逻辑，达到减少编码的时间。</p>
+<p><strong>SpringMVC基于Java实现MVC模型的轻量级web框架</strong></p>
+<h2 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h2><ol>
+<li>使用SpringMVC技术需要先导入SpringMVC坐标和Servlet坐标</li>
+<li>创建SpringMVC控制器类</li>
+<li>初始话SpringMVC环境，设定加载对应的bean</li>
+<li>初始化Servlet容器，加载SpringMVC环境，并设置SpringMVC技术处理请求</li>
+</ol>
+<p><img src="/2023/10/20/SSM_SpringMVC/2.png" alt="image-20231020151002956"></p>
+<p><strong>AbstractDispatcherServletInitializer类是SpringMVC提供的快速初始化类，提供三个接口方法：</strong></p>
+<p><img src="/2023/10/20/SSM_SpringMVC/3.png" alt="image-20231020151119093"></p>
+<h3 id="工作流程分析"><a href="#工作流程分析" class="headerlink" title="工作流程分析"></a>工作流程分析</h3><p><img src="/2023/10/20/SSM_SpringMVC/4.png" alt="image-20231020151259607"></p>
+<h2 id="Bean加载控制"><a href="#Bean加载控制" class="headerlink" title="Bean加载控制"></a>Bean加载控制</h2><h3 id="1-SpringMVC对应bean加载"><a href="#1-SpringMVC对应bean加载" class="headerlink" title="1.SpringMVC对应bean加载"></a>1.SpringMVC对应bean加载</h3><p>在SpringMVC的配置类SpringMvcConfig中使用注解@ComponentScan，我们只需要将其扫描范围设置到controller即可</p>
+<h3 id="2-Spring对应bean加载"><a href="#2-Spring对应bean加载" class="headerlink" title="2.Spring对应bean加载"></a>2.Spring对应bean加载</h3><p>因功能不同，在加载Spring控制的bean时要排掉SpringMVC控制的bean</p>
+<ul>
+<li>方式一:修改Spring配置类，设定SpringMVC扫描范围为精准范围</li>
+</ul>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@Configuration</span></span><br><span class="line"><span class="variable">@ComponentScan</span>(&#123;<span class="string">&quot;service&quot;</span>,<span class="string">&quot;dao&quot;</span>&#125;)</span><br><span class="line">public class SpringConfig &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>方式二:修改Spring配置类，设定扫描范围,排除掉SpringMVC控制的controller包中的bean</li>
+</ul>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//扫描排除@ComponentScan(Value = “大目录”, excludeFilters = @ComponentScan.Filter(type = FilterType.ANNOTATION,classes = xxx.class))</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="variable">@Configuration</span></span><br><span class="line"><span class="variable">@ComponentScan</span>(value=<span class="string">&quot;&quot;</span>,</span><br><span class="line">excludeFilters=<span class="variable">@ComponentScan</span>.<span class="built_in">Filter</span>(</span><br><span class="line">type = FilterType.ANNOTATION,</span><br><span class="line">classes = Controller.class</span><br><span class="line">)</span><br><span class="line">)</span><br><span class="line">public class SpringConfig &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="简化开发"><a href="#简化开发" class="headerlink" title="简化开发"></a>简化开发</h2><p><img src="/2023/10/20/SSM_SpringMVC/5.png" alt="image-20231020152023029"></p>
+<h1 id="PostMan简介"><a href="#PostMan简介" class="headerlink" title="PostMan简介"></a>PostMan简介</h1><p>作用：常用于进行接口测试</p>
+<h2 id="请求"><a href="#请求" class="headerlink" title="请求"></a>请求</h2><h3 id="GET发送参数"><a href="#GET发送参数" class="headerlink" title="GET发送参数"></a>GET发送参数</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http:<span class="regexp">//</span>localhost/commonParam?name=itcast&amp;age=<span class="number">15</span></span><br></pre></td></tr></table></figure>
+
+<p>接收参数：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Controller</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">UserController</span> &#123;</span><br><span class="line"><span class="meta">@RequestMapping(<span class="string">&quot;/commonParam&quot;</span>)</span></span><br><span class="line"><span class="meta">@ResponseBody</span></span><br><span class="line"><span class="keyword">public</span> String commonParam(String name,int age)&#123;</span><br><span class="line">System.<span class="keyword">out</span>.println(<span class="string">&quot;普通参数传递 name ==&gt; &quot;</span>+name);</span><br><span class="line">System.<span class="keyword">out</span>.println(<span class="string">&quot;普通参数传递 age ==&gt; &quot;</span>+age);</span><br><span class="line"><span class="keyword">return</span> <span class="string">&quot;&#123;&#x27;module&#x27;:&#x27;commonParam&#x27;&#125;&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="GET请求中文乱码"><a href="#GET请求中文乱码" class="headerlink" title="GET请求中文乱码"></a>GET请求中文乱码</h3><p>如果我们传递的参数中有中文，你会发现接收到的参数会出现中文乱码问题。发送请求: <code>http://localhost/commonParam?name=张三&amp;age=18</code></p>
+<ul>
+<li>出现乱码的原因：Tomcat8.5以后的版本已经处理了中文乱码的问题，但是IDEA中的Tomcat插件目前只到Tomcat7，所以需要修改pom.xml来解决GET请求中文乱码问题</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.tomcat.maven<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>tomcat7-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">version</span>&gt;</span>2.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">port</span>&gt;</span>80<span class="tag">&lt;/<span class="name">port</span>&gt;</span><span class="comment">&lt;!--tomcat端口号--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">path</span>&gt;</span>/<span class="tag">&lt;/<span class="name">path</span>&gt;</span> <span class="comment">&lt;!--虚拟目录--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">uriEncoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">uriEncoding</span>&gt;</span><span class="comment">&lt;!--访问路径编解码字符集--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="POST发送参数"><a href="#POST发送参数" class="headerlink" title="POST发送参数"></a>POST发送参数</h3><p><img src="/2023/10/20/SSM_SpringMVC/6.png" alt="image-20231020152804318"></p>
+<p>接收方式与get保持一致即可</p>
+<h3 id="POST请求中文乱码"><a href="#POST请求中文乱码" class="headerlink" title="POST请求中文乱码"></a>POST请求中文乱码</h3><p>解决方案:配置过滤器</p>
+<figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">public <span class="class"><span class="keyword">class</span> <span class="title">ServletContainersInitConfig</span> <span class="keyword">extends</span> <span class="title">AbstractAnnotationConfigDispatcherServletInitializer</span> </span>&#123;</span><br><span class="line"><span class="keyword">protected</span> <span class="type">Class</span>&lt;?&gt;[] getRootConfigClasses() &#123;</span><br><span class="line"><span class="keyword">return</span> <span class="keyword">new</span> <span class="type">Class</span>[<span class="number">0</span>];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">protected</span> <span class="type">Class</span>&lt;?&gt;[] getServletConfigClasses() &#123;</span><br><span class="line"><span class="keyword">return</span> <span class="keyword">new</span> <span class="type">Class</span>[]&#123;<span class="type">SpringMvcConfig</span>.<span class="keyword">class</span>&#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">protected</span> <span class="type">String</span>[] getServletMappings() &#123;</span><br><span class="line"><span class="keyword">return</span> <span class="keyword">new</span> <span class="type">String</span>[]&#123;<span class="string">&quot;/&quot;</span>&#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//乱码处理</span></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">protected</span> <span class="type">Filter</span>[] getServletFilters() &#123;</span><br><span class="line"><span class="type">CharacterEncodingFilter</span> filter = <span class="keyword">new</span> <span class="type">CharacterEncodingFilter</span>();</span><br><span class="line">filter.setEncoding(<span class="string">&quot;UTF-8&quot;</span>);</span><br><span class="line"><span class="keyword">return</span> <span class="keyword">new</span> <span class="type">Filter</span>[]&#123;filter&#125;;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="五种类型参数传递"><a href="#五种类型参数传递" class="headerlink" title="五种类型参数传递"></a>五种类型参数传递</h3><h4 id="普通参数"><a href="#普通参数" class="headerlink" title="普通参数"></a>普通参数</h4><p>前端给的是name ,后台接收使用的是userName ,两个名称对不上的解决方法:</p>
+<ul>
+<li>使用@RequestParam注解</li>
+<li>发送请求与参数:<code>http://localhost/commonParamDifferentName?name=张三&amp;age=18</code></li>
+<li>后台接收参数</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping(<span class="string">&quot;/commonParamDifferentName&quot;</span>)</span></span><br><span class="line"><span class="meta">@ResponseBody</span></span><br><span class="line"><span class="keyword">public</span> String commonParamDifferentName(<span class="meta">@RequestParam(<span class="string">&quot;name&quot;</span>)</span> String userName , int age)&#123;</span><br><span class="line">System.<span class="keyword">out</span>.println(<span class="string">&quot;普通参数传递 userName ==&gt; &quot;</span>+userName);</span><br><span class="line">System.<span class="keyword">out</span>.println(<span class="string">&quot;普通参数传递 age ==&gt; &quot;</span>+age);</span><br><span class="line"><span class="keyword">return</span> <span class="string">&quot;&#123;&#x27;module&#x27;:&#x27;common param different name&#x27;&#125;&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="POJO类型参数"><a href="#POJO类型参数" class="headerlink" title="POJO类型参数"></a>POJO类型参数</h4><ul>
+<li>此时需要使用前面准备好的POJO类，先来看下User</li>
+</ul>
+<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="symbol">User</span> &#123;</span><br><span class="line"><span class="keyword">private</span> String name;</span><br><span class="line"><span class="keyword">private</span> <span class="built_in">int</span> age;</span><br><span class="line"><span class="comment">//setter...getter...略</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>发送请求和参数</li>
+</ul>
+<p><img src="/2023/10/20/SSM_SpringMVC/7.png" alt="image-20231020153434070"></p>
+<ul>
+<li>后台接收参数</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//POJO参数：请求参数与形参对象中的属性对应即可完成参数传递</span></span><br><span class="line"><span class="meta">@RequestMapping(<span class="string">&quot;/pojoParam&quot;</span>)</span></span><br><span class="line"><span class="meta">@ResponseBody</span></span><br><span class="line"><span class="keyword">public</span> String pojoParam(User user)&#123;</span><br><span class="line">System.<span class="keyword">out</span>.println(<span class="string">&quot;pojo参数传递 user ==&gt; &quot;</span>+user);</span><br><span class="line"><span class="keyword">return</span> <span class="string">&quot;&#123;&#x27;module&#x27;:&#x27;pojo param&#x27;&#125;&quot;</span>;</span><br><span class="line"><span class="comment">//请求参数key的名称要和POJO中属性的名称一致，否则无法封装。</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="嵌套POJO类型参数"><a href="#嵌套POJO类型参数" class="headerlink" title="嵌套POJO类型参数"></a>嵌套POJO类型参数</h4><ul>
+<li>如果POJO对象中嵌套了其他的POJO类，如</li>
+</ul>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Address</span> </span>&#123;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">String</span> province;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">String</span> city;</span><br><span class="line"><span class="comment">//setter...getter...略</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">String</span> name;</span><br><span class="line"><span class="keyword">private</span> int age;</span><br><span class="line"><span class="keyword">private</span> Address address;</span><br><span class="line"><span class="comment">//setter...getter...略</span></span><br><span class="line"><span class="comment">//嵌套POJO参数：请求参数名与形参对象属性名相同，按照对象层次结构关系即可接收嵌套POJO属</span></span><br><span class="line"><span class="comment">//性参数</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>请求参数</li>
+</ul>
+<p><img src="/2023/10/20/SSM_SpringMVC/8.png" alt="image-20231020153602938"></p>
+<ul>
+<li>后台接收参数</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//POJO参数：请求参数与形参对象中的属性对应即可完成参数传递</span></span><br><span class="line"><span class="meta">@RequestMapping(<span class="string">&quot;/pojoParam&quot;</span>)</span></span><br><span class="line"><span class="meta">@ResponseBody</span></span><br><span class="line"><span class="keyword">public</span> String pojoParam(User user)&#123;</span><br><span class="line">System.<span class="keyword">out</span>.println(<span class="string">&quot;pojo参数传递 user ==&gt; &quot;</span>+user);</span><br><span class="line"><span class="keyword">return</span> <span class="string">&quot;&#123;&#x27;module&#x27;:&#x27;pojo param&#x27;&#125;&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="数组类型参数"><a href="#数组类型参数" class="headerlink" title="数组类型参数"></a>数组类型参数</h4><ul>
+<li>请求</li>
+</ul>
+<p><img src="/2023/10/20/SSM_SpringMVC/9.png" alt="image-20231020153726083"></p>
+<ul>
+<li>后台接收参数</li>
+</ul>
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//数组参数：同名请求参数可以直接映射到对应名称的形参数组对象中</span></span><br><span class="line">@<span class="constructor">RequestMapping(<span class="string">&quot;/arrayParam&quot;</span>)</span></span><br><span class="line">@ResponseBody</span><br><span class="line">public String <span class="built_in">array</span><span class="constructor">Param(String[] <span class="params">likes</span>)</span>&#123;</span><br><span class="line"><span class="module-access"><span class="module"><span class="identifier">System</span>.</span></span>out.println(<span class="string">&quot;数组参数传递 likes ==&gt; &quot;</span>+ <span class="module-access"><span class="module"><span class="identifier">Arrays</span>.</span></span><span class="keyword">to</span><span class="constructor">String(<span class="params">likes</span>)</span>);</span><br><span class="line">return <span class="string">&quot;&#123;&#x27;module&#x27;:&#x27;array param&#x27;&#125;&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="集合类型参数"><a href="#集合类型参数" class="headerlink" title="集合类型参数"></a>集合类型参数</h4><ul>
+<li>发送请求和参数</li>
+</ul>
+<ul>
+<li>后台接收参数</li>
+</ul>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//集合参数：同名请求参数可以使用@RequestParam注解映射到对应名称的集合对象中作为数据</span></span><br><span class="line"><span class="meta">@RequestMapping</span>(<span class="string">&quot;/listParam&quot;</span>)</span><br><span class="line"><span class="meta">@ResponseBody</span></span><br><span class="line"><span class="keyword">public</span> <span class="title class_">String</span> <span class="title function_">listParam</span>(<span class="params"><span class="meta">@RequestParam</span> List&lt;<span class="built_in">String</span>&gt; likes</span>)&#123;</span><br><span class="line"><span class="comment">//如果没有@RequestParam则会报错,因为SpringMVC将List看做是一个POJO对象来处理，将其创建一个对象并准备把前端的数</span></span><br><span class="line"><span class="comment">//据封装到对象中，但是List是一个接口无法创建对象，所以报错</span></span><br><span class="line"><span class="title class_">System</span>.<span class="property">out</span>.<span class="title function_">println</span>(<span class="string">&quot;集合参数传递 likes ==&gt; &quot;</span>+ likes);</span><br><span class="line"><span class="keyword">return</span> <span class="string">&quot;&#123;&#x27;module&#x27;:&#x27;list param&#x27;&#125;&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="JSON数据传递参数"><a href="#JSON数据传递参数" class="headerlink" title="JSON数据传递参数"></a>JSON数据传递参数</h3><ul>
+<li>准备工作：添加依赖</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.fasterxml.jackson.core<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>jackson-databind<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">version</span>&gt;</span>2.9.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>准备工作：开启SpringMVC注解支持</li>
+</ul>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@Configuration</span></span><br><span class="line"><span class="variable">@ComponentScan</span>(<span class="string">&quot;controller&quot;</span>)</span><br><span class="line"><span class="comment">//开启json数据类型自动转换</span></span><br><span class="line"><span class="variable">@EnableWebMvc</span></span><br><span class="line">public class SpringMvcConfig &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="JSON普通数组"><a href="#JSON普通数组" class="headerlink" title="JSON普通数组"></a>JSON普通数组</h4><ul>
+<li>PostMan发送JSON数据</li>
+</ul>
+<p><img src="/2023/10/20/SSM_SpringMVC/10.png" alt="image-20231020154916031"></p>
+<p><img src="/2023/10/20/SSM_SpringMVC/11.png" alt="image-20231020154937296"></p>
+<ul>
+<li>参数前添加@RequestBody</li>
+</ul>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//使用@RequestBody注解将外部传递的json数组数据映射到形参的集合对象中作为数据</span></span><br><span class="line"><span class="meta">@RequestMapping</span>(<span class="string">&quot;/listParamForJson&quot;</span>)</span><br><span class="line"><span class="meta">@ResponseBody</span></span><br><span class="line"><span class="keyword">public</span> <span class="title class_">String</span> <span class="title function_">listParamForJson</span>(<span class="params"><span class="meta">@RequestBody</span> List&lt;<span class="built_in">String</span>&gt; likes</span>)&#123;</span><br><span class="line"><span class="title class_">System</span>.<span class="property">out</span>.<span class="title function_">println</span>(<span class="string">&quot;list common(json)参数传递 list ==&gt; &quot;</span>+likes);</span><br><span class="line"><span class="keyword">return</span> <span class="string">&quot;&#123;&#x27;module&#x27;:&#x27;list common for json param&#x27;&#125;&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="JSON对象数据"><a href="#JSON对象数据" class="headerlink" title="JSON对象数据"></a>JSON对象数据</h4><ul>
+<li>请求和数据的发送</li>
+</ul>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line"><span class="attr">&quot;name&quot;</span><span class="punctuation">:</span><span class="string">&quot;itcast&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;age&quot;</span><span class="punctuation">:</span><span class="number">15</span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;address&quot;</span><span class="punctuation">:</span><span class="punctuation">&#123;</span></span><br><span class="line"><span class="attr">&quot;province&quot;</span><span class="punctuation">:</span><span class="string">&quot;beijing&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;city&quot;</span><span class="punctuation">:</span><span class="string">&quot;beijing&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>后端接收数据</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping(<span class="string">&quot;/pojoParamForJson&quot;</span>)</span></span><br><span class="line"><span class="meta">@ResponseBody</span></span><br><span class="line"><span class="keyword">public</span> String pojoParamForJson(<span class="meta">@RequestBody</span> User user)&#123;</span><br><span class="line">System.<span class="keyword">out</span>.println(<span class="string">&quot;pojo(json)参数传递 user ==&gt; &quot;</span>+user);</span><br><span class="line"><span class="keyword">return</span> <span class="string">&quot;&#123;&#x27;module&#x27;:&#x27;pojo for json param&#x27;&#125;&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="JSON对象数组"><a href="#JSON对象数组" class="headerlink" title="JSON对象数组"></a>JSON对象数组</h4><ul>
+<li>请求和数据的发送</li>
+</ul>
+<figure class="highlight prolog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;itcast&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">15</span>&#125;,</span><br><span class="line">&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;itheima&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">12</span>&#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>后端接收数据</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping(<span class="string">&quot;/listPojoParamForJson&quot;</span>)</span></span><br><span class="line"><span class="meta">@ResponseBody</span></span><br><span class="line"><span class="keyword">public</span> String listPojoParamForJson(<span class="meta">@RequestBody</span> List&lt;User&gt; list)&#123;</span><br><span class="line">System.<span class="keyword">out</span>.println(<span class="string">&quot;list pojo(json)参数传递 list ==&gt; &quot;</span>+list);</span><br><span class="line"><span class="keyword">return</span> <span class="string">&quot;&#123;&#x27;module&#x27;:&#x27;list pojo for json param&#x27;&#125;&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="日期类型参数传递"><a href="#日期类型参数传递" class="headerlink" title="日期类型参数传递"></a>日期类型参数传递</h3><ul>
+<li><p>做好准备工作(同上)</p>
+</li>
+<li><p>发送请求:<code>http://localhost/dataParam?date=2088/08/08&amp;date1=2088-08-08&amp;date2=2088/08/08 8:08:08</code></p>
+</li>
+<li><p>接收请求</p>
+</li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping(<span class="string">&quot;/dataParam&quot;</span>)</span></span><br><span class="line"><span class="meta">@ResponseBody</span></span><br><span class="line"><span class="keyword">public</span> String dataParam(Date date,</span><br><span class="line"><span class="meta">@DateTimeFormat(pattern=<span class="string">&quot;yyyy-MM-dd&quot;</span>)</span> Date date1,</span><br><span class="line"><span class="comment">//使用@DateTimeFormat进行格式转换</span></span><br><span class="line"><span class="meta">@DateTimeFormat(pattern=<span class="string">&quot;yyyy/MM/dd HH:mm:ss&quot;</span>)</span> Date</span><br><span class="line">date2)</span><br><span class="line">System.<span class="keyword">out</span>.println(<span class="string">&quot;参数传递 date ==&gt; &quot;</span>+date);</span><br><span class="line">System.<span class="keyword">out</span>.println(<span class="string">&quot;参数传递 date1(yyyy-MM-dd) ==&gt; &quot;</span>+date1);</span><br><span class="line">System.<span class="keyword">out</span>.println(<span class="string">&quot;参数传递 date2(yyyy/MM/dd HH:mm:ss) ==&gt; &quot;</span>+date2);</span><br><span class="line"><span class="keyword">return</span> <span class="string">&quot;&#123;&#x27;module&#x27;:&#x27;data param&#x27;&#125;&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="响应"><a href="#响应" class="headerlink" title="响应"></a>响应</h2><p><img src="/2023/10/20/SSM_SpringMVC/12.png" alt="image-20231020155523228"></p>
+<h1 id="Rest风格"><a href="#Rest风格" class="headerlink" title="Rest风格"></a>Rest风格</h1><p><img src="/2023/10/20/SSM_SpringMVC/13.png" alt="image-20231020155618414"></p>
+<p>(REST风格而不是规范)RESTful</p>
+<p><img src="/2023/10/20/SSM_SpringMVC/14.png" alt="image-20231020155711682"></p>
+<p><img src="/2023/10/20/SSM_SpringMVC/15.png" alt="image-20231020155739648"></p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@RestController</span><span class="built_in">`可替代`</span><span class="variable">@Controller</span><span class="built_in">`+`</span><span class="variable">@ResponseBody</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/2023/10/20/SSM_SpringMVC/16.png" alt="image-20231020155830801"></p>
+<h1 id="SSM整合"><a href="#SSM整合" class="headerlink" title="SSM整合"></a>SSM整合</h1><p><img src="/2023/10/20/SSM_SpringMVC/17.png" alt="image-20231020155946399"></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%90%8E%E7%AB%AF/" rel="tag"># 后端</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/10/18/SpringBoot/" rel="prev" title="SpringBoot">
+      <i class="fa fa-chevron-left"></i> SpringBoot
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SSM-SpringMVC"><span class="nav-number">1.</span> <span class="nav-text">[SSM_SpringMVC]</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SpringMVC%E7%AE%80%E4%BB%8B"><span class="nav-number">2.</span> <span class="nav-text">SpringMVC简介</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B"><span class="nav-number">2.1.</span> <span class="nav-text">工作流程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90"><span class="nav-number">2.1.1.</span> <span class="nav-text">工作流程分析</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Bean%E5%8A%A0%E8%BD%BD%E6%8E%A7%E5%88%B6"><span class="nav-number">2.2.</span> <span class="nav-text">Bean加载控制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-SpringMVC%E5%AF%B9%E5%BA%94bean%E5%8A%A0%E8%BD%BD"><span class="nav-number">2.2.1.</span> <span class="nav-text">1.SpringMVC对应bean加载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Spring%E5%AF%B9%E5%BA%94bean%E5%8A%A0%E8%BD%BD"><span class="nav-number">2.2.2.</span> <span class="nav-text">2.Spring对应bean加载</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%80%E5%8C%96%E5%BC%80%E5%8F%91"><span class="nav-number">2.3.</span> <span class="nav-text">简化开发</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PostMan%E7%AE%80%E4%BB%8B"><span class="nav-number">3.</span> <span class="nav-text">PostMan简介</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%B7%E6%B1%82"><span class="nav-number">3.1.</span> <span class="nav-text">请求</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#GET%E5%8F%91%E9%80%81%E5%8F%82%E6%95%B0"><span class="nav-number">3.1.1.</span> <span class="nav-text">GET发送参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GET%E8%AF%B7%E6%B1%82%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81"><span class="nav-number">3.1.2.</span> <span class="nav-text">GET请求中文乱码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#POST%E5%8F%91%E9%80%81%E5%8F%82%E6%95%B0"><span class="nav-number">3.1.3.</span> <span class="nav-text">POST发送参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#POST%E8%AF%B7%E6%B1%82%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81"><span class="nav-number">3.1.4.</span> <span class="nav-text">POST请求中文乱码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%94%E7%A7%8D%E7%B1%BB%E5%9E%8B%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92"><span class="nav-number">3.1.5.</span> <span class="nav-text">五种类型参数传递</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%99%AE%E9%80%9A%E5%8F%82%E6%95%B0"><span class="nav-number">3.1.5.1.</span> <span class="nav-text">普通参数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#POJO%E7%B1%BB%E5%9E%8B%E5%8F%82%E6%95%B0"><span class="nav-number">3.1.5.2.</span> <span class="nav-text">POJO类型参数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B5%8C%E5%A5%97POJO%E7%B1%BB%E5%9E%8B%E5%8F%82%E6%95%B0"><span class="nav-number">3.1.5.3.</span> <span class="nav-text">嵌套POJO类型参数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E7%BB%84%E7%B1%BB%E5%9E%8B%E5%8F%82%E6%95%B0"><span class="nav-number">3.1.5.4.</span> <span class="nav-text">数组类型参数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B%E5%8F%82%E6%95%B0"><span class="nav-number">3.1.5.5.</span> <span class="nav-text">集合类型参数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JSON%E6%95%B0%E6%8D%AE%E4%BC%A0%E9%80%92%E5%8F%82%E6%95%B0"><span class="nav-number">3.1.6.</span> <span class="nav-text">JSON数据传递参数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#JSON%E6%99%AE%E9%80%9A%E6%95%B0%E7%BB%84"><span class="nav-number">3.1.6.1.</span> <span class="nav-text">JSON普通数组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#JSON%E5%AF%B9%E8%B1%A1%E6%95%B0%E6%8D%AE"><span class="nav-number">3.1.6.2.</span> <span class="nav-text">JSON对象数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#JSON%E5%AF%B9%E8%B1%A1%E6%95%B0%E7%BB%84"><span class="nav-number">3.1.6.3.</span> <span class="nav-text">JSON对象数组</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%A5%E6%9C%9F%E7%B1%BB%E5%9E%8B%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92"><span class="nav-number">3.1.7.</span> <span class="nav-text">日期类型参数传递</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%93%8D%E5%BA%94"><span class="nav-number">3.2.</span> <span class="nav-text">响应</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Rest%E9%A3%8E%E6%A0%BC"><span class="nav-number">4.</span> <span class="nav-text">Rest风格</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SSM%E6%95%B4%E5%90%88"><span class="nav-number">5.</span> <span class="nav-text">SSM整合</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Pufan Zuo</p>
+  <div class="site-description" itemprop="description">大局观选手。</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Pufan Zuo</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
