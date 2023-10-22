@@ -36,7 +36,7 @@
 <meta property="og:image" content="https://zac-saodiseng.github.io/2023/10/15/Redis/7.png">
 <meta property="og:image" content="https://zac-saodiseng.github.io/2023/10/15/Redis/8.png">
 <meta property="article:published_time" content="2023-10-15T03:25:00.000Z">
-<meta property="article:modified_time" content="2023-10-15T10:16:51.555Z">
+<meta property="article:modified_time" content="2023-10-22T07:59:43.367Z">
 <meta property="article:author" content="Pufan Zuo">
 <meta property="article:tag" content="后端">
 <meta name="twitter:card" content="summary">
@@ -198,10 +198,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2023-10-15 11:25:00 / Modified: 18:16:51" itemprop="dateCreated datePublished" datetime="2023-10-15T11:25:00+08:00">2023-10-15</time>
+              <time title="Created: 2023-10-15 11:25:00" itemprop="dateCreated datePublished" datetime="2023-10-15T11:25:00+08:00">2023-10-15</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2023-10-22 15:59:43" itemprop="dateModified" datetime="2023-10-22T15:59:43+08:00">2023-10-22</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -368,7 +374,6 @@
 <p>具体哪个从机会变成主机<br>其判定规则主要为<br>（顺序依次往下，优先级》偏移量》runid）</p>
 <p>优先级在redis.conf中默认：slave-priority 100，值越小优先级越高<br>偏移量是指获得原主机数据最全的，也就是数据越多，变主机的机会越大<br>每个redis实例启动后都会随机生成一个40位的runid</p>
 <p><img src="/2023/10/15/Redis/3.png"></p>
-<p>在这里也有个缺点就是复制会有延时<br>由于所有的写操作都是先在Master上操作，然后同步更新到Slave上，所以从Master同步到Slave机器有一定的延迟，当系统很繁忙的时候，延迟问题会更加严重，Slave机器数量的增加也会使这个问题更加严重。</p>
 <p>在这里也有个缺点就是复制会有延时<br>由于所有的写操作都是先在Master上操作，然后同步更新到Slave上，所以从Master同步到Slave机器有一定的延迟，当系统很繁忙的时候，延迟问题会更加严重，Slave机器数量的增加也会使这个问题更加严重。</p>
 <h1 id="集群"><a href="#集群" class="headerlink" title="集群"></a>集群</h1><p>容量不够，并发写操作等问题<br>通过引入集群，也就是可以多个主机可以操作</p>
 <p>另外，主从模式，薪火相传模式，主机宕机，导致ip地址发生变化，应用程序中配置需要修改对应的主机地址、端口等信息。<br>之前通过代理主机来解决，但是redis3.0中提供了解决方案。就是无中心化集群配置。</p>
