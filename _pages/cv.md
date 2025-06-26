@@ -7,7 +7,7 @@ redirect_from:
   - /resume
 ---
 
-[Curriculum Vitae (PDF)](../assets/Curriculum_Vitae.pdf)
+[Curriculum Vitae (PDF)](/assets/Curriculum_Vitae.pdf)
 
 {% include base_path %}
 
