@@ -13,7 +13,7 @@ redirect_from:
 
 Education
 ======
-* B.S. in Computer Science & Technology, Northeastern University, 2022-2026
+* BSc in Computer Science & Technology, Northeastern University, 2022-2026
 
 Professional experience
 ======
