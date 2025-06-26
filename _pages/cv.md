@@ -42,7 +42,7 @@ Professional experience
 - Solved large-scale data growth challenges (250GB/table) via MySQL sharding + Blade tiered storage
 
 **TutorEva**  
-`Jan 2023 - Mar 2024` | Beijing, China  
+`Jan 2024 - Mar 2024` | Beijing, China  
 *Algorithm Engineer, AI Research Institute*  
 - Developed syntax parsing/semantic mapping algorithms for K-12 math expressions  
 - Optimized symbolic algebra computation framework improving accuracy & performance  
