@@ -23,7 +23,7 @@ Professional experience
 - Designed data integration solutions for ecosystem products and proposed kernel-level optimization strategies for StarRocks database engine  
 - Led integration of Apache Arrow and high-performance RPC framework, achieving **20× general query performance boost** (peak 160× acceleration)  
 - Developed ecosystem tools: StarRocks Tableau JDBC Connector and official dbt-starrocks adapter  
-- Open-source contributions: [github.com/StarRocks/starrocks/pull/57956](https://github.com/StarRocks/starrocks/pull/57956)  
+- Open-source contributions: [Support Arrow Flight SQL for StarRocks](https://github.com/StarRocks/starrocks/pull/57956)  
 
 **Kuaishou Technology**  
 `Jul 2024 - Dec 2024` | Beijing, China  
@@ -65,9 +65,7 @@ Research Experience
 
 **Northeastern University AI Lab**  
 `Mar 2023 - Jul 2023` | Shenyang, China  
-*Research Intern (Mentor: Prof. Miao Fang)*  
-- Researched hardware-software co-optimization techniques for HPC environments  
-- Explored ML/DL applications in database system optimization  
+*Research Intern (Mentor: Prof. Miao Fang)*   
 
 Technical Skills
 ======
