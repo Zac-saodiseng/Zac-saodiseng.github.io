@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Your Name / Site Title"
+title                    : "Pufan(Zach) Zuo"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
+name                     : &name "Pufan Zuo"
+description              : &description "A highly self-motivated individual with a deep enthusiasm for scientific research."
 url                      : https://zac-saodiseng.github.io/ # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
@@ -26,7 +26,7 @@ author:
   name             : "Pufan(Zach) Zuo"
   pronouns         : # example: "she/her"  
   bio              : "A highly self-motivated individual with a deep enthusiasm for scientific research."
-  location         : "Xi 'an, Shaanxi Province, China"
+  location         : "Xi 'an, China"
   employer         : "Northeastern University"
   uri              : # URL
   email            : "z3253345336@gmail.com" 
@@ -60,7 +60,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "https://www.linkedin.com/in/zach-zuo-242662356/"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
