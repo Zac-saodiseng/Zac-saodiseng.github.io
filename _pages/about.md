@@ -8,10 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-I'm a third year undergraduate student from [School of EECS](https://eecs.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/). My research interest includes computer vision, computer graphics, machine learning, and computational photography.
+I am a Computer Science undergraduate at [Northeastern University](https://english.neu.edu.cn/) (Class of 2026) pursuing PhD opportunities. My research focuses on overcoming I/O bottlenecks in billion-scale vector retrieval through novel indexing structures and hardware-aware optimizations.
 
-I am very fortunate to be advised by [Prof. XXX](https://www.XXX.com/) of XXX Lab from [School of Computer Science](https://cs.pku.edu.cn/), Peking University. I was advised by [Prof. XX](https://XXX.pku.edu.cn/) from [School of Computer Science](https://cs.pku.edu.cn/), Peking University.
+I am very fortunate to be advised by [Prof. Yanfeng Zhang](https://neuzhangyf.github.io/) of iDC-NEU Lab from [School of Computer Science and Engineering](http://www.cse.neu.edu.cn/), Northeastern University.
+You can find my CV here: [Pufan Zuo's Curriculum Vitae](../assets/Curriculum_Vitae.pdf).
 
-You can find my CV here: [XX's Curriculum Vitae](../assets/Curriculum_Vitae.pdf).
-
-[Email](mailto:XX@stu.pku.edu.cn) / [Github](https://github.com/QiuDi233) / [Wechat](../images/wechat.jpg) / [CSDN](https://blog.csdn.net/qd1813100174?spm=1000.2115.3001.5343)
+[Email](mailto:z3253345336@gmail.com) / [Github](https://github.com/Zac-saodiseng) / [Wechat](../images/wechat.jpg) / [LinkedIn](https://www.linkedin.com/in/zach-zuo-242662356/)
