@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About me"
+title: "About Me"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -14,6 +14,6 @@ My research focuses on overcoming I/O bottlenecks in billion-scale vector retrie
 
 I am very fortunate to be advised by [Prof. Yanfeng Zhang](https://neuzhangyf.github.io/) of iDC-NEU Lab from [School of Computer Science and Engineering](http://www.cse.neu.edu.cn/), Northeastern University.
 
-You can find my CV here: [Pufan Zuo's Curriculum Vitae](../assets/Curriculum_Vitae.pdf).
+I am currently a Database Engine R&D Engineer at CelerData (powered by StarRocks), working on next-generation OLAP database optimizations and ecosystem tooling. I actively maintain and contribute to the StarRocks open-source community, a high-performance MPP database with 10K+ GitHub stars.
 
 [Email](mailto:z3253345336@gmail.com) / [Github](https://github.com/Zac-saodiseng) / [Wechat](../images/wechat.jpg) / [LinkedIn](https://www.linkedin.com/in/zach-zuo-242662356/)
