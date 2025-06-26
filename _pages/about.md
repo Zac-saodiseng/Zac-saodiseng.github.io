@@ -8,12 +8,16 @@ redirect_from:
   - /about.html
 ---
 
-I am a Computer Science undergraduate at [Northeastern University](https://english.neu.edu.cn/) (Class of 2026) pursuing PhD opportunities.
+I am a Computer Science undergraduate at [Northeastern University](https://english.neu.edu.cn/) (Class of 2026) .
 
-My research focuses on overcoming I/O bottlenecks in billion-scale vector retrieval through novel indexing structures and hardware-aware optimizations.
+My research focuses on:
+
+**Data Systems:** Privacy-preserving Data Systems, Machine Learning for Systems, Cloud Database, Streaming Database, Vector Database, Data Integration and Cleaning, Distributed OLTP/OLAP, Query Optimization
+
+**Data Science:** Anomaly Detection, Intelligent Data Systems, Big Data Analytics, Interpretable Machine Learning, ETL
 
 I am very fortunate to be advised by [Prof. Yanfeng Zhang](https://neuzhangyf.github.io/) of iDC-NEU Lab from [School of Computer Science and Engineering](http://www.cse.neu.edu.cn/), Northeastern University.
 
 I am currently a Database Engine R&D Engineer at CelerData (powered by StarRocks), working on next-generation OLAP database optimizations and ecosystem tooling. I actively maintain and contribute to the StarRocks open-source community, a high-performance MPP database with 10K+ GitHub stars.
 
-[Email](mailto:z3253345336@gmail.com) / [Github](https://github.com/Zac-saodiseng) / [Wechat](../images/wechat.jpg) / [LinkedIn](https://www.linkedin.com/in/zach-zuo-242662356/)
+<span style="color: #e74c3c; font-weight: bold;">Actively pursuing PhD opportunities for Fall 2026</span>
