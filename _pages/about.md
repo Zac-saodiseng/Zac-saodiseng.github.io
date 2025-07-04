@@ -24,4 +24,7 @@ I am currently a Database Engine R&D Engineer at CelerData (powered by StarRocks
 
 ---
 # News
-* **07/2025:** Led the Arrow Flight SQL integration in StarRocks — [blog post](https://medium.com/@z3253345336/starrocks-arrow-flight-sql-数据传输性能的跃迁之路-b9a54c55f48e)
+* **04/2025:** Led the Arrow Flight SQL integration in StarRocks — \[[Blog Post](https://medium.com/@z3253345336/starrocks-arrow-flight-sql-数据传输性能的跃迁之路-b9a54c55f48e)\]
+* **02/2025:** Joined **CelerData** (Powered by StarRocks) as a SaaS Team R&D Engineer.
+* **07/2024:** Interned at **Kuaishou Tech** as a Infrastructure R&D Engineer.
+* **03/2024:** Interned at **Meituan** as a Resource Scheduling Backend Engineer.
