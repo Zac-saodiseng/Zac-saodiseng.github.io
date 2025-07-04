@@ -12,9 +12,9 @@ I am a Computer Science undergraduate at [Northeastern University](https://engli
 
 My research focuses on:
 
-**Data Systems:** Privacy-preserving Data Systems, Machine Learning for Systems, Cloud Database, Streaming Database, Vector Database, Data Integration and Cleaning, Distributed OLTP/OLAP, Query Optimization
+**Data Systems:** Privacy-preserving Data Systems, Machine Learning for Systems, Cloud Database, Graph Processing, Vector Database, Data Integration and Cleaning, Distributed OLTP/OLAP, Query Optimization
 
-**Data Science:** Anomaly Detection, Intelligent Data Systems, Big Data Analytics, Interpretable Machine Learning, ETL
+**Data Science:** Intelligent Data Systems, Big Data Analytics, Interpretable Machine Learning, ETL, Data Lakehouse
 
 I am very fortunate to be advised by [Prof. Yanfeng Zhang](http://faculty.neu.edu.cn/zhangyf/en/index.htm) of iDC-NEU Lab from [School of Computer Science and Engineering](http://www.cse.neu.edu.cn/), Northeastern University.
 
