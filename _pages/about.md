@@ -16,7 +16,7 @@ My research focuses on:
 
 **Data Science:** Anomaly Detection, Intelligent Data Systems, Big Data Analytics, Interpretable Machine Learning, ETL
 
-I am very fortunate to be advised by [Prof. Yanfeng Zhang](https://neuzhangyf.github.io/) of iDC-NEU Lab from [School of Computer Science and Engineering](http://www.cse.neu.edu.cn/), Northeastern University.
+I am very fortunate to be advised by [Prof. Yanfeng Zhang](http://faculty.neu.edu.cn/zhangyf/en/index.htm) of iDC-NEU Lab from [School of Computer Science and Engineering](http://www.cse.neu.edu.cn/), Northeastern University.
 
 I am currently a Database Engine R&D Engineer at CelerData (powered by StarRocks), working on next-generation OLAP database optimizations and ecosystem tooling. I actively maintain and contribute to the StarRocks open-source community, a high-performance MPP database with 10K+ GitHub stars.
 
