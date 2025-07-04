@@ -24,5 +24,4 @@ I am currently a Database Engine R&D Engineer at CelerData (powered by StarRocks
 
 ---
 # News
-* **07/2025:** I have published a comprehensive technical blog detailing the Arrow Flight SQL protocol I implemented in StarRocks:  
-👉 [StarRocks Arrow Flight SQL: A Leap in Data Transfer Performance](https://medium.com/@z3253345336/starrocks-arrow-flight-sql-数据传输性能的跃迁之路-b9a54c55f48e)
+* **07/2025:** I led the end-to-end development of Arrow Flight SQL integration in StarRocks and documented the process in this blog post: [StarRocks Arrow Flight SQL: A Leap in Data Transfer Performance](https://medium.com/@z3253345336/starrocks-arrow-flight-sql-数据传输性能的跃迁之路-b9a54c55f48e)
