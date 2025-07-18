@@ -12,7 +12,7 @@ I am a Computer Science undergraduate at [Northeastern University](https://engli
 
 My research focuses on:
 
-**AI and Data Science:** AGI, Intelligent Data Systems, Big Data Analytics, Interpretable Machine Learning, ETL, Data Lakehouse
+**AI and Data Science:** LLM inference optimization, AGI, Intelligent Data Systems, Big Data Analytics, Interpretable Machine Learning, ETL, Data Lakehouse
 
 **Data Systems:** Privacy-preserving Data Systems, Machine Learning for Systems, Cloud Database, Graph Processing, Vector Database, Data Integration and Cleaning, Distributed OLTP/OLAP, Query Optimization
 
