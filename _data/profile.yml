@@ -23,14 +23,11 @@ linkedin: zach-zuo-242662356
 short_bio_text_justify: false
 short_bio: >-
   <p>
-  <img src="assets/images/photos/interest.png" alt="Research Interests"
-       style="float: left; width: 350px; margin-right: 12px; margin-bottom: 6px; border-radius: 8px;">
-
-  I am currently a <strong>Ph.D. student in Computer Science</strong> at the
-  <a href="https://www.cs.utah.edu/" target="_blank">Kahlert School of Computing</a>,
-  <a href="https://www.utah.edu/" target="_blank">University of Utah</a>, Salt Lake City, UT,
-  advised by Prof.
-  <a href="https://sites.google.com/site/muzhang82/home?authuser=0" target="_blank">Prof. Mu Zhang</a>.
+    I am currently a <strong>Ph.D. student in Computer Science</strong> at the
+    <a href="https://www.cs.utah.edu/" target="_blank">Kahlert School of Computing</a>,
+    <a href="https://www.utah.edu/" target="_blank">University of Utah</a>, Salt Lake City, UT,
+    advised by Prof.
+    <a href="https://sites.google.com/site/muzhang82/home?authuser=0" target="_blank">Prof. Mu Zhang</a>.
   </p>
 
   <p>
@@ -44,6 +41,9 @@ short_bio: >-
   </p>
 
   <p>
+    <img src="assets/images/photos/interest.png" alt="Research Interests"
+       style="float: left; width: 350px; margin-right: 12px; margin-bottom: 6px; border-radius: 8px;">
+
     Before my Ph.D., I earned my <strong>B.E. in Computer Science</strong> from 
     <a href="https://www.neu.edu.cn/" target="_blank">Northeastern University</a>, China, 
     advised by Prof. <a href="https://neuzhangyf.github.io/" target="_blank">Prof. Yanfeng Zhang</a>.
