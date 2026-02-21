@@ -34,6 +34,16 @@ short_bio: >-
   </p>
 
   <p>
+    My research focuses on <strong>AI and LLM/VLM-based agent security</strong>, with particular interest in 
+    security challenges arising in AI workflows where machine learning models are tightly intertwined with 
+    code logic. I study emerging attack surfaces in LLM/VLM-powered agents, such as web-based and tool-using agents, 
+    and investigate how adversaries can manipulate perception, reasoning, memory, and action pipelines to 
+    induce harmful or unintended behaviors (e.g., deceiving agents into executing incorrect actions in real-world tasks). 
+    More broadly, I am interested in understanding new security risks introduced by AI-enabled applications 
+    and AI-driven software development processes.
+  </p>
+
+  <p>
     Before my Ph.D., I earned my <strong>B.E. in Computer Science</strong> from 
     <a href="https://www.neu.edu.cn/" target="_blank">Northeastern University</a>, China, 
     advised by Prof. <a href="https://neuzhangyf.github.io/" target="_blank">Prof. Yanfeng Zhang</a>.
@@ -51,7 +61,7 @@ short_bio: >-
     <i class="fa-solid fa-rectangle-ad" style="color: #d60000;"></i>
     <span style="color: #d60000;">I am open to research collaborations and internship opportunities</span> 
     in AI security, LLM/VLM-based agents, and secure AI systems. 
-    Please feel free to reach out via email if you are interested in collaborating.
+    Please feel free to reach out via email or WeChat if you are interested in collaborating.
   </p>
 
 
