@@ -26,32 +26,31 @@ short_bio: >-
   <img src="assets/images/photos/interest.png" alt="Research Interests"
        style="float: left; width: 350px; margin-right: 12px; margin-bottom: 6px; border-radius: 8px;">
 
-  I am currently a <strong>CS Ph.D. student</strong> in the 
-  <a href="https://www.cs.utah.edu/" target="_blank">Kahlert School of Computing</a> at the 
-  <a href="https://www.utah.edu/" target="_blank">University of Utah</a>, Salt Lake City, USA, 
-  advised by Prof. 
-  <a href="https://sites.google.com/site/muzhang82/home?authuser=0" target="_blank">Mu Zhang</a>.
-</p>
-
-
-  <p>
-    Prior to my Ph.D., I received a <strong>Bachelor of Engineering in Computer Science</strong> from 
-    <a href="https://www.neu.edu.cn/" target="_blank">Northeastern University</a>, China, 
-    where I was advised by Prof. <a href="https://neuzhangyf.github.io/" target="_blank">Yanfeng Zhang</a>.
+  I am currently a <strong>Ph.D. student in Computer Science</strong> at the
+  <a href="https://www.cs.utah.edu/" target="_blank">Kahlert School of Computing</a>,
+  <a href="https://www.utah.edu/" target="_blank">University of Utah</a>, Salt Lake City, UT,
+  advised by Prof.
+  <a href="https://sites.google.com/site/muzhang82/home?authuser=0" target="_blank">Prof. Mu Zhang</a>.
   </p>
 
   <p>
-    I have industry experience as a software and systems engineer, having worked at 
+    Before my Ph.D., I earned my <strong>B.E. in Computer Science</strong> from 
+    <a href="https://www.neu.edu.cn/" target="_blank">Northeastern University</a>, China, 
+    advised by Prof. <a href="https://neuzhangyf.github.io/" target="_blank">Prof. Yanfeng Zhang</a>.
+  </p>
+
+  <p>
+    I have industry experience as a software and systems engineer at 
     <a href="https://celerdata.com/" target="_blank">CelerData</a>, 
     <a href="https://ir.kuaishou.com/" target="_blank">Kuaishou</a>, 
     and <a href="https://www.meituan.com/en-US/about-us" target="_blank">Meituan</a>, 
-    where my work focused on large-scale data systems, infrastructure, and engineering-driven problem solving.
+    focused on large-scale data systems, infrastructure, and engineering-driven problem solving.
   </p>
 
   <p>
     <i class="fa-solid fa-rectangle-ad" style="color: #d60000;"></i>
     <span style="color: #d60000;">I am open to research collaborations and internship opportunities</span> 
-    related to AI security, LLM/VLM-based agents, and secure AI systems. 
+    in AI security, LLM/VLM-based agents, and secure AI systems. 
     Please feel free to reach out via email if you are interested in collaborating.
   </p>
 
