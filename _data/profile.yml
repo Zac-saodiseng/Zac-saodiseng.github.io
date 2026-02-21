@@ -23,24 +23,16 @@ linkedin: zach-zuo-242662356
 short_bio_text_justify: false
 short_bio: >-
   <p>
-  <img src="assets/images/photos/interest.png" alt="Research Interests" 
+  <img src="assets/images/photos/interest.png" alt="Research Interests"
        style="float: left; width: 350px; margin-right: 12px; margin-bottom: 6px; border-radius: 8px;">
 
-  I am a <strong>Ph.D. student</strong> in Computer Science at the 
-  <a href="https://www.utah.edu/" target="_blank">University of Utah</a>, 
-  in the <a href="https://www.cs.utah.edu/" target="_blank">Kahlert School of Computing</a>, 
-  advised by Prof. <a href="https://sites.google.com/site/muzhang82/home?authuser=0" target="_blank">Mu Zhang</a>.
-  </p>
+  I am currently a <strong>CS Ph.D. student</strong> in the 
+  <a href="https://www.cs.utah.edu/" target="_blank">Kahlert School of Computing</a> at the 
+  <a href="https://www.utah.edu/" target="_blank">University of Utah</a>, Salt Lake City, USA, 
+  advised by Prof. 
+  <a href="https://sites.google.com/site/muzhang82/home?authuser=0" target="_blank">Mu Zhang</a>.
+</p>
 
-  <p>
-    My research focuses on <strong>AI and LLM/VLM-based agent security</strong>, with particular interest in 
-    security challenges arising in AI workflows where machine learning models are tightly intertwined with 
-    code logic. I study emerging attack surfaces in LLM/VLM-powered agents, such as web-based and tool-using agents, 
-    and investigate how adversaries can manipulate perception, reasoning, memory, and action pipelines to 
-    induce harmful or unintended behaviors (e.g., deceiving agents into executing incorrect actions in real-world tasks). 
-    More broadly, I am interested in understanding new security risks introduced by AI-enabled applications 
-    and AI-driven software development processes.
-  </p>
 
   <p>
     Prior to my Ph.D., I received a <strong>Bachelor of Engineering in Computer Science</strong> from 
