@@ -107,17 +107,9 @@ experience:
 
 
 awards:
-- name: TAMU Dean's Doctoral Fellowship 
-  date: Aug. 2025
-- name: 2025 AAG GISS Student Paper Competition Honorable Mention
-  date: Mar. 2025
-- name: 2025 EIP Student of the Year Award
-  date: Mar. 2025
-- name: Most Suitably Applied Analysis Methodology Award
-  date: Feb. 2025
-- name: Bronze medal in Kaggle's Child Mind Institute - Detect Sleep States
-  date: Jan. 2024
+# - name: TAMU Dean's Doctoral Fellowship 
+#   date: Aug. 2025
 - name: Outstanding Graduate Award
-  date: Jun. 2022
-- name: Provincial Champion of The World Mandarin Debating Championship
-  date: Sep. 2020
+  date: Jun. 2026
+- name: National Award, National College Student Computer System Capability Competition
+  date: Nov. 2024
