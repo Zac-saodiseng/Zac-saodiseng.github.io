@@ -4,34 +4,38 @@ navbar_title: "CV"
 layout: default
 ---
 
-<!-- 核心：用div包裹iframe，隐藏浏览器默认工具栏，保留PDF原生交互 -->
 <div class="container py-5">
   <h1 class="mb-4">Pufan Zuo - Curriculum Vitae</h1>
   
-  <!-- 外层容器：裁剪掉顶部黑框，保留PDF内容和超链接 -->
+  <!-- 外层容器：裁剪顶部黑框，保留超链接 -->
   <div class="w-100 mb-4" style="
     height: 90vh; 
     overflow: hidden;      /* 隐藏溢出的工具栏 */
-    border: 1px solid #eee;/* 浅边框替代黑框，保持观感 */
+    border: 1px solid #eee;/* 浅边框替代黑框，观感整洁 */
     position: relative;
+    margin-bottom: 1rem;
   ">
-    <!-- iframe：下移抵消顶部黑框，保留所有原生交互（包括超链接） -->
-    <iframe 
-      src="{{ '/assets/CV/Zach_Zuo_CV.pdf' | relative_url }}#toolbar=0"  <!-- 禁用PDF.js工具栏 -->
+    <!-- <object> 标签：适配你的PDF文件名，保留超链接，隐藏黑框 -->
+    <object 
+      data="{{ '/assets/CV/Zach_Zuo_CV.pdf' | relative_url }}#toolbar=0"  <!-- 你的PDF文件名 + 禁用工具栏 -->
+      type="application/pdf" 
       width="100%" 
-      height="calc(90vh + 40px)"  <!-- 高度补偿，避免内容被裁 -->
+      height="calc(90vh + 40px)"  <!-- 高度补偿，避免内容裁剪 -->
       style="
         border: none;
         position: absolute;
-        top: -40px;  /* 关键：上移隐藏顶部黑框工具栏 */
+        top: -40px;  /* 关键：上移隐藏顶部黑框 */
         left: 0;
       "
-      sandbox="allow-scripts allow-top-navigation allow-forms"  <!-- 允许超链接跳转 -->
     >
-      <p>Your browser doesn't support PDFs. <a href="{{ '/assets/CV/Zach_Zuo_CV.pdf' | relative_url }}">Download CV</a></p>
-    </iframe>
+      <!-- 浏览器不支持PDF时的降级方案 -->
+      <p>Your browser does not support PDF viewing. 
+        <a href="{{ '/assets/CV/Zach_Zuo_CV.pdf' | relative_url }}" download>Download Zach_Zuo_CV.pdf</a>
+      </p>
+    </object>
   </div>
 
+  <!-- 下载按钮 -->
   <div class="mt-2">
     <a href="{{ '/assets/CV/Zach_Zuo_CV.pdf' | relative_url }}" 
        class="btn btn-primary btn-lg" 
