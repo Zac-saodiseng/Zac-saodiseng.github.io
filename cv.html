@@ -1,13 +1,15 @@
 ---
 title: "Curriculum Vitae"       
 navbar_title: "CV"
-layout: default  # 关键：添加这行，继承带导航栏的默认模板
+layout: default  # 保留导航栏的核心配置
 ---
 
 <div class="container py-5">
-  <!-- 原有CV内容不变 -->
+  <!-- 页面大标题 -->
   <h1 class="mb-4">Pufan Zuo - Curriculum Vitae</h1>
-  <div class="w-100 mb-4" style="min-height: 1000px; height: 90vh; border: 1px solid #eee;">
+  
+  <!-- 优化后的PDF容器：高度适配A4纸，初始加载不占满屏幕 -->
+  <div class="w-100 mb-4" style="min-height: 800px; max-height: 900px; overflow: auto; border: 1px solid #eee;">
     <embed 
       src="{{ '/assets/CV/cv.pdf' | relative_url }}" 
       type="application/pdf" 
@@ -16,6 +18,8 @@ layout: default  # 关键：添加这行，继承带导航栏的默认模板
       style="border: none;"
     >
   </div>
+
+  <!-- 下载按钮 -->
   <div class="mt-2">
     <a href="{{ '/assets/CV/cv.pdf' | relative_url }}" 
        class="btn btn-primary btn-lg" 
