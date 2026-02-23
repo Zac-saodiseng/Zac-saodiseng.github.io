@@ -6,7 +6,7 @@ pages:
 # - name: Publications
 #   url: /publications
 - name: CV
-  url: /cv
+  url: /assets/cv/Zach_Zuo_CV.pdf
 - name: Projects
   url: /projects
 # - name: Showcase
