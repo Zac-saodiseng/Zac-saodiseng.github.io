@@ -68,47 +68,42 @@ short_bio: >-
 
 portrait_url: /assets/images/photos/profile.jpg
 portrait_caption: >-
-  Serve the cat, rule the world.
+  After all, tomorrow is another day!
 
 education:
-- name: Texas A&M University
-  logo: /assets/images/badges/Texas_A&M_University_seal.svg
-  position: Ph.D. in Geographic Information Systems
-  date: Aug. 2025 - Present
-- name: University of Southern California
-  logo: /assets/images/badges/usc.png
-  position: M.S. in Spatial Data Science
-  date: Aug. 2023 - May. 2025
-- name: Nanjing Audit University
-  logo: /assets/images/badges/NAU.png
-  position: B.A. in Economics, Finance
-  date: Sep. 2018 - Jul. 2022
+- name: The University of Utah
+  logo: /assets/images/badges/U_of_Utah_seal.svg
+  position: Ph.D. in Computer Science
+  date: Aug. 2026 - Present
+# - name: University of Southern California
+#   logo: /assets/images/badges/usc.png
+#   position: M.S. in Spatial Data Science
+#   date: Aug. 2023 - May. 2025
+- name: Northeastern University
+  logo: /assets/images/badges/NEU.png
+  position: B.E. in Computer Science & Technology
+  date: Sep. 2022 - Jul. 2026
 
 experience:
-- name: The Hong Kong University of Science and Technology (Guangzhou)
-  logo: /assets/images/badges/UST.svg.png
-  position: Research Assistant - AI4City Lab
-  date: Aug. 2024 - Aug.2025
+- name: Apache StarRocks Community
+  logo: /assets/images/badges/starrocks.png
+  position: StarRocks Active Contributor
+  date: Feb. 2025 - Nov. 2025
 
-- name: Harvard University
-  logo: /assets/images/badges/Harvard.png
-  position: Research Assistant - Spatial Data Lab
-  date: May. 2024 - Sep. 2024
+- name: Celerdata
+  logo: /assets/images/badges/celerdata.svg
+  position: Technical Ecological Construction Engineer
+  date: Feb. 2025 - Nov. 2025
 
-- name: City of Hope
-  logo: /assets/images/badges/COH.png
-  position: Data Science Intern
-  date: Feb. 2024 - May. 2024
+- name: Kuaishou
+  logo: /assets/images/badges/kuaishou.png
+  position: R&D Performance Platform Intern
+  date: Jul. 2024 - Dec. 2024
 
-- name: The Hong Kong Polytechnic University
-  logo: /assets/images/badges/PolyU.svg_.png
-  position: Research Assistant
-  date: Sep. 2023 - May. 2024
-
-- name: NetEase Youdao
-  logo: /assets/images/badges/youdaojfif.jfif
-  position: Data Analyst Intern
-  date: Jan. 2023 - Apr. 2023
+- name: Meituan
+  logo: /assets/images/badges/meituan.png
+  position: Java Software Development Intern
+  date: Mar. 2024 - Jul. 2024
 
 
 awards:
