@@ -2,6 +2,7 @@
 title: "Foursquare Open Source Places - POI Data Processing"
 date: 2026-02-06 00:01:00 +0800
 selected: true  # 是否高亮显示 (true/false)
+published: false
 
 description: >-
   Foursquare Open Source Places (FSQ OS Places) is a high-quality, open POI (Points of Interest) dataset released by Foursquare, containing over 104 million POIs worldwide. While platforms like OpenStreetMap (OSM) and Overture Maps aim to improve open POI coverage, FSQ OS Places provides a more extensive and precise dataset.
