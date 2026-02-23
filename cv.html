@@ -1,20 +1,17 @@
 ---
 title: "Curriculum Vitae"       
 navbar_title: "CV"
-layout: default  # 关键：添加这行，继承带导航栏的默认模板
+layout: default
 ---
 
 <div class="container py-5">
-  <!-- 原有CV内容不变 -->
-  <div class="w-100 mb-4" style="min-height: 1000px; height: 90vh; border: 1px solid #eee;">
-    <embed 
-      src="{{ '/assets/CV/cv.pdf' | relative_url }}" 
-      type="application/pdf" 
-      width="100%" 
-      height="100%"
-      style="border: none;"
-    >
+  <h1 class="mb-4">Pufan Zuo - Curriculum Vitae</h1>
+
+  <!-- PDF 渲染容器，没有黑框 -->
+  <div id="pdf-container" class="w-100 mb-4" style="border: 1px solid #eee; background: #fff;">
+    <!-- PDF.js 会在这里动态渲染每一页 -->
   </div>
+
   <div class="mt-2">
     <a href="{{ '/assets/CV/cv.pdf' | relative_url }}" 
        class="btn btn-primary btn-lg" 
@@ -23,3 +20,44 @@ layout: default  # 关键：添加这行，继承带导航栏的默认模板
     </a>
   </div>
 </div>
+
+<!-- 引入 PDF.js 库 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+<script>
+  // 设置 PDF.js 的 worker 源
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
+
+  // 你的 PDF 文件路径
+  const pdfUrl = "{{ '/assets/CV/cv.pdf' | relative_url }}";
+  const container = document.getElementById('pdf-container');
+
+  // 异步加载并渲染 PDF
+  (async function renderPDF() {
+    try {
+      // 加载 PDF 文档
+      const pdfDoc = await pdfjsLib.getDocument(pdfUrl).promise;
+      const numPages = pdfDoc.numPages;
+
+      // 逐页渲染
+      for (let pageNum = 1; pageNum <= numPages; pageNum++) {
+        const page = await pdfDoc.getPage(pageNum);
+        const viewport = page.getViewport({ scale: 1.5 }); // 调整 scale 控制清晰度
+
+        // 创建 canvas 元素
+        const canvas = document.createElement('canvas');
+        const context = canvas.getContext('2d');
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+        canvas.style.display = 'block';
+        canvas.style.margin = '0 auto'; // 页面居中
+
+        // 渲染页面到 canvas
+        await page.render({ canvasContext: context, viewport: viewport }).promise;
+        container.appendChild(canvas);
+      }
+    } catch (error) {
+      console.error('Error rendering PDF:', error);
+      container.innerHTML = '<p class="text-center text-danger">Failed to load PDF. Please download it instead.</p>';
+    }
+  })();
+</script>
