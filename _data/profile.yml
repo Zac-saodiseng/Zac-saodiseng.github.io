@@ -112,8 +112,10 @@ experience:
 awards:
 # - name: TAMU Dean's Doctoral Fellowship 
 #   date: Aug. 2025
-- name: Outstanding Graduate Award
+- name: NEU Outstanding Graduate Award
   date: Jun. 2026
+- name: NEU Merit Scholarship (Top Student Award)
+  date: Dec. 2025
 - name: StarRocks(10K+ stars MPP database) Active Contributor
   date: Jul. 2025
 - name: National Award, National Computer System Capability Competition
